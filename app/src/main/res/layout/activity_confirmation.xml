@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Confirmation"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear4"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_your_details"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person_black_24dp"
+            android:layout_gravity="center"
+
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear5"
+        android:layout_below="@id/linear4"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:id="@+id/txtUser"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear6"
+        android:layout_below="@id/linear5"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:id="@+id/txtMobile"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear7"
+        android:layout_below="@id/linear6"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:id="@+id/txtpass"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_format"
+        android:text="@string/confirm"
+        android:textAllCaps="false"
+        android:layout_below="@id/linear7"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="goMenu"
+        android:textColor="#ffffff"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_format"
+        android:text="@string/edit"
+        android:textAllCaps="false"
+        android:layout_below="@id/linear7"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:onClick="goBack"
+        android:textColor="#ffffff"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">KongDunga2</string>
+    <string name="logo_name">Kong Dunga</string>
+    <string name="user_name_edt">user name</string>
+    <string name="password_edit">password</string>
+    <string name="create_account1">Create account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_your_profile">Create Your Profile</string>
+    <string name="create_password">create password</string>
+    <string name="create_name">create name</string>
+    <string name="enter_mobile">enter Mobile</string>
+    <string name="next">next</string>
+    <string name="confirm_your_details">Confirm Your Details</string>
+    <string name="confirm">Confirm</string>
+    <string name="edit">Edit</string>
+    <string name="username">UserName:</string>
+    <string name="mobile">Mobile:</string>
+    <string name="password">Password:</string>
+    <string name="place_your_order">Place your Order</string>
+    <string name="mnjeluzz">Mnjeluzz</string>
+    <string name="thankyou">Thankyou!</string>
+</resources>

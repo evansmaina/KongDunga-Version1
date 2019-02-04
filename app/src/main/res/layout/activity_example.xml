@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Example"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/logo_name"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:textColor="#ffffff"
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/kuku"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="3dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_person_black_24dp"
+        android:layout_below="@id/linear1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mnjeluzz"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/profile"
+        android:layout_alignBottom="@id/profile"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile"
+        android:text="Your order Is:"
+        android:id="@+id/order_mes"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_mes"
+        android:text="food:"
+        android:id="@+id/namefood"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_mes"
+        android:layout_toRightOf="@id/namefood"
+        android:text="foodview"
+        android:id="@+id/foodview"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        />
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:id="@+id/imagefood"
+       android:src="@drawable/kuku"
+       android:layout_centerHorizontal="true"
+       android:layout_toRightOf="@id/foodview"
+       android:layout_marginStart="40dp"
+       android:layout_below="@id/order_mes"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namefood"
+        android:text="price"
+        android:id="@+id/pricefood"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pricefood"
+        android:layout_centerHorizontal="true"
+        android:text="@string/thankyou"
+        android:id="@+id/thanks"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thanks"
+        android:layout_centerHorizontal="true"
+        android:text="Click below to receive order code"
+        android:textSize="20sp"
+        android:id="@+id/txt345"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt345"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="View code"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_format"
+        android:textColor="#ffffff"
+        android:id="@+id/codeView"
+        android:onClick="goViewCode"
+        />
+
+
+</RelativeLayout>

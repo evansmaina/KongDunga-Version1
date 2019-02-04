@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Display"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_your_order"
+        android:textSize="30sp"
+        android:id="@+id/placeOrder"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="275dp"
+        android:layout_height="183dp"
+        android:id="@+id/imageDisplay"
+        android:src="@drawable/bajia"
+        tools:ignore="ContentDescription"
+        android:layout_below="@id/placeOrder"
+        android:layout_marginTop="7dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bhajia"
+        android:textSize="20sp"
+        android:id="@+id/foodDisplay"
+        android:layout_below="@id/imageDisplay"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bhajia"
+        android:textSize="20sp"
+        android:id="@+id/priceDisplay"
+        android:layout_below="@id/foodDisplay"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bhajia"
+        android:textSize="20sp"
+        android:layout_below="@id/priceDisplay"
+        android:id="@+id/orderDisplay"
+        android:padding="10dp"
+        />
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/purchase"
+    android:background="@drawable/btn_format"
+    android:text="Order"
+    android:textAllCaps="false"
+        android:layout_below="@id/orderDisplay"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:onClick="onPurchase"
+    />
+
+
+
+</RelativeLayout>
